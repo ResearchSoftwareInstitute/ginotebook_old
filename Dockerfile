@@ -7,6 +7,7 @@ RUN apt-get install -y postgresql-9.3 postgresql-client-common postgresql-common
 RUN apt-get install -y sqlite3 sqlite3-pcre libspatialite-dev libspatialite5 spatialite-bin
 RUN apt-get install -y ssh git libfreetype6 libfreetype6-dev libxml2-dev libxslt-dev libprotobuf-dev
 RUN apt-get install -y python2.7-gdal gdal-bin libgdal-dev gdal-contrib python-pillow protobuf-compiler libtokyocabinet-dev tokyocabinet-bin libreadline-dev ncurses-dev
+RUN apt-get install -y grass grass-doc grass-dev grass-dev-doc libgdal1-1.10.1-grass
 
 ADD . /home/docker/hydroshare
 
